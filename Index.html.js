@@ -203,32 +203,4 @@ function removeKey(i) {
 </script>
 
 </body>
-</html>                                                                                                                                                <div id="keyBox" class="key-box">---</div>
-
-                                                                                                                                                    <button onclick="copiarKey()">COPIAR KEY</button>
-
-                                                                                                                                                        <p><small>Validade até 06/01/2026</small></p>
-                                                                                                                                                        </div>
-
-                                                                                                                                                        <script>
-                                                                                                                                                        function gerarKey() {
-                                                                                                                                                            // KEY FIXA (recomendada pra AIDE)
-                                                                                                                                                                const key = "TX CHRIS V3";
-                                                                                                                                                                    document.getElementById("keyBox").innerText = key;
-                                                                                                                                                                    }
-
-                                                                                                                                                                    function copiarKey() {
-                                                                                                                                                                        const key = document.getElementById("keyBox").innerText;
-                                                                                                                                                                            if (key === "---") {
-                                                                                                                                                                                    alert("Gere a key primeiro!");
-                                                                                                                                                                                            return;
-                                                                                                                                                                                                }
-
-                                                                                                                                                                                                    navigator.clipboard.writeText(key).then(() => {
-                                                                                                                                                                                                            alert("Key copiada!");
-                                                                                                                                                                                                                });
-                                                                                                                                                                                                                }
-                                                                                                                                                                                                                </script>
-
-                                                                                                                                                                                                                </body>
-                                                                                                                                                                                                                </html>
+</html>
